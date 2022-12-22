@@ -1,7 +1,7 @@
 {
   description = "Example of Nix shell";
 
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/release-21.11";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/release-22.11";
   inputs.flake-utils.url = "github:numtide/flake-utils";
   inputs.flake-compat = {
     url = "github:edolstra/flake-compat";
