@@ -2,16 +2,16 @@
 
 buildGoModule rec {
   pname = "go-changelog";
-  version = "56335215ce3a8676ba7153be7c444daadcb132c7";
+  version = "ba40b3a8c7ff33eee3ccd1d90dd76030f072df1f";
 
   src = fetchFromGitHub {
     owner = "hashicorp";
     repo = "go-changelog";
-    rev = "56335215ce3a8676ba7153be7c444daadcb132c7";
-    sha256 = "0z6ysz4x1rim09g9knbc5x5mrasfk6mzsi0h7jn8q4i035y1gg2j";
+    rev = version;
+    sha256 = "sha256-/3hENAiJFO+igfDyyuHl3+kaU8JJqd3EjxAiqfH9F6I=";
   };
 
-  vendorSha256 = "1pahh64ayr885kv9rd5i4vh4a6hi1w583wch9n1ncvnckznzsdbg";
+  vendorSha256 = "sha256-e0G7u+XAVEEfHNX1FGNKVPe4dp5fRwwJ69dnkyoW+Fw=";
 
   subPackages = [ "cmd/changelog-build" ];
 }

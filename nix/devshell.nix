@@ -1,17 +1,18 @@
-{ lib
-, stdenv
-, hello
+{ mkShell
+, fluxcd
 , go-changelog
-  # , go-protobuf
+, hello
+, kubectl
 , protoc-gen-go
-, mkShell
 }:
 
 mkShell rec {
   name = "dev";
 
   packages = [
+    fluxcd
     hello
+    kubectl
     protoc-gen-go
 
     # Custom packages, added to overlay
