@@ -2,7 +2,8 @@
 , stdenv
 , hello
 , go-changelog
-, go-protobuf
+  # , go-protobuf
+, protoc-gen-go
 , mkShell
 }:
 
@@ -11,9 +12,9 @@ mkShell rec {
 
   packages = [
     hello
+    protoc-gen-go
 
     # Custom packages, added to overlay
-    go-protobuf
     go-changelog
   ];
 
